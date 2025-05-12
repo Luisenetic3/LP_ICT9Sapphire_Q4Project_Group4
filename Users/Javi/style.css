@@ -1,0 +1,41 @@
+h1 {
+	background: lightblue;
+text-align: center;border: solid;margin: 40px
+;padding: 20px; }
+
+body{
+	display: ;
+       	justify-self: center;
+	align-items: center;
+	text-align: center;
+
+background-image: url(https://cdn.wallpaperhub.app/cloudcache/b/2/4/5/3/2/b24532af59a26ffefe80037593a3ea35ba10e8a8.jpg);
+}
+.Skibidi{
+	border:solid;
+	text-align: ;
+	width:300px;
+	height: 250px;
+	background:lightblue ;
+	margin-right: auto;
+	margin-left: auto;
+font-size: 16px;
+	color: black;
+}.;
+
+.bingbong{
+background: red;
+border: 15px;
+border-radius: 4px;
+box-sizing: 15px;
+	height: 10px;
+}
+
+
+*{
+
+	margin: 00;
+	padding: 0;
+	box-sizing: 0;
+	font-family: "Poppings", gill sans-serif;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: #e0f0ff;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+    .footer {
+      background-color: #6f42c1;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      flex-shrink: 0;
+    }
+    .rating-section {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="obmc.png" alt="" width="40px" height="40px"></a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="Main.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://storage.googleapis.com/oa_disk001/oblaspinas/69/classfeed/2929/submissions/1727195695-2327.html">Quarter 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://aralovesarsenal.github.io/LP_ICT9Sapphire_Q2PROJ_Quinto_Arabella/">Quarter 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://aralovesarsenal.github.io/LP_ICT9Sapphire_Q3Project_Gutierrez-Quinto/">Quarter 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://aralovesarsenal.github.io/LP_ICT9S_Q4Quiz1_Quinto_Arabella/">Quarter 4 Quiz 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://aralovesarsenal.github.io/LP_ICT9S_Q4Quiz2_Quinto_Arabella/">Quarter 4 Quiz 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="WWE.html">What's Next</a></li>
+          <li class="nav-item"><a class="nav-link" href="ratings.html">Rate Us</a></li>
+        </ul>
+        <form class="d-flex ms-auto">
+          <input class="form-control me-2" type="search" placeholder="Search...">
+          <button class="btn btn-light" type="submit">Search</button>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="https://luisenetic3.github.io/LP_ICT9Sapphire_Q4Project_Group4/">Logout</a></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mt-5">
+    <div class="text-center mb-4">
+      <h1>What do you think of Ara's ICT Portfolio this year?</h1>
+      <p class="lead">We’d love to hear your feedback!</p>
+    </div>
+
+    <div class="rating-section">
+      <form action="#" method="post">
+        <div class="mb-3">
+          <!--<<label for="rating" class="form-label"><b>How would you rate it?</b></label>
+          <select class="form-select" id="rating" name="rating" required>
+            <option value="">Select a rating</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Good</option>
+            <option value="3">⭐⭐⭐ Average</option>
+            <option value="2">⭐⭐ Needs improvement</option>
+            <option value="1">⭐ Poor</option>
+          </select>>-->
+
+          <label for="rating" class="form-label"><b>How would you rate it?</b></label>
+          <input type="number" name="" id="rating" class="form-control" min="1" max="5" placeholder="Rate from 1 to 5" required onchange="takeit()">
+        </div>
+
+        <div class="mb-3">
+          <label for="feedback" class="form-label"><b>Comments (optional):</b></label>
+          <textarea class="form-control" id="feedback" name="feedback" rows="4" placeholder="Type your feedback here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" onclick="handleSubmit()">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>OB Montessori Center Las Piñas Campus</p>
+    <p>&copy;Sophia Jimenez, Luis Nazareno, Javier Mabilog, Arabella Quinto, Zoe Mutia, AC Mactal</p>
+  </div>
+
+  <script>
+    function takeit() {
+      var rating = document.getElementById("rating").value;
+      switch (rating) {
+        case "1":
+          alert("The projects are  below expectations. Please share your thoughts below for our better understanding.");
+          break;
+        case "2":
+          alert("The projects are slightly below expectations. Please share your thoughts below for our better understanding.");
+          break;
+        case "3":
+          alert("The projects are meets expectations! Thank you.");
+          break;
+        case "4":
+          alert("The projects are above expectations! Please share your thoughts below for our better understanding.");
+          break;
+        case "5":
+          alert("The projects are excellent! Please share your thoughts below for our better understanding.");
+          break;
+        default:
+          alert("Please select a valid rating.");
+      }
+    }
+
+    function handleSubmit() {
+      window.alert("Thank you for your feedback!");
+    }
+  </script>
+
+</body>
+</html>
